@@ -1,6 +1,8 @@
 [profile.default]
-src = "src"
-out = "out"
+ffi = true
+fs_permissions = [{access = "read", path = "./images/"}]
 libs = ["lib"]
-
+out = "out"
+remappings = ['@openzeppelin/contracts=lib/openzeppelin-contracts/contracts']
+src = "src"
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
